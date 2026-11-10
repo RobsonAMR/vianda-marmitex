@@ -1,0 +1,378 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3efef;
+    color: #333;
+}
+
+
+header {
+    background-color: #171720;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav {
+    background-color: #c51922;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+section {
+    padding: 15px 20px;
+    text-align: center;
+
+}
+
+section h2 {
+    color: #c51922;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-top: 5px;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px #ccc;
+    transition: 0.3s;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.especial {
+    border: 2px solid #c51922;
+}
+
+.produto {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+    text-align: center;
+}
+
+.produto h3 {
+    color: #c51922;
+}
+
+.produto img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#bebidas .produto img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: #198754;
+
+}
+
+.botao {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.botao-pedido {
+    display: inline-block;
+    background-color: #c51922;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.botao-pedido:hover {
+    background-color: #92141b;
+}
+
+.botao:hover {
+    background-color: #1da851;
+
+}
+
+.botao-ifood {
+    display: inline-block;
+    background-color: #ea1d2c;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.informacoes {
+    background-color: white;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+    text-align: center;
+
+}
+
+.informacoes h3 {
+    color: #c51922;
+}
+
+.horario {
+    color: #198754;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #171720;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.rodape-info {
+    flex: 1;
+    width: 200px;
+    text-align: center;
+}
+
+.rodape-info h3 {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.rodape-info p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.rodape-final {
+    color: #cccccc;
+    font-size: 13px;
+}
+
+
+#inicio {
+    padding-bottom: 5px;
+}
+
+#cardapio {
+    padding-top: 5px;
+}
+
+.cardapio-semanal {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.cardapio-semanal input {
+    display: none;
+}
+
+.dias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dias label {
+    background-color: #c51922;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dias label:hover {
+    background-color: #92141b;
+
+}
+
+.conteudo {
+    text-align: center;
+    display: none;
+    margin-top: 25px;
+}
+
+#segunda:checked~.segunda,
+#terca:checked~.terca,
+#quarta:checked~.quarta,
+#quinta:checked~.quinta,
+#sexta:checked~.sexta,
+#sabado:checked~.sabado {
+    display: block;
+}
+
+#segunda:checked~.dias label[for="segunda"],
+#terca:checked~.dias label[for="terca"],
+#quarta:checked~.dias label[for="quarta"],
+#quinta:checked~.dias label[for="quinta"],
+#sexta:checked~.dias label[for="sexta"],
+#sabado:checked~.dias label[for="sabado"] {
+    background-color: #171720;
+}
+
+.conteudo .produto {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+
+.taxa {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.taxa h3 {
+    color: #c51922;
+}
+
+.formas-pagamento {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pagamentos {
+    background-color: white;
+    width: 170px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ddd;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.pagamentos h3 {
+    color: #198754;
+    font-size: 16px;
+}
+
+.pagamentos:hover {
+    transform: translateY(-5px);
+
+}
+
+.botao i,
+.botao-ifood i {
+    font-size: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.botao-ifood:hover{
+    background-color: #b91522;
+}
+@media (max-width: 600px) {
+    .produto {
+        width: 100%;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
+    .produto img {
+        height: 180px;
+    }
+
+    .dias label {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .pagamentos {
+        width: 140px;
+    }
+
+    .informacoes {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+
+}
